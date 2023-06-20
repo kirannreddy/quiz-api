@@ -21,6 +21,8 @@ options.WithOrigins("http://localhost:3000")
 .AllowAnyMethod()
 .AllowAnyHeader());
 
+//Removed the Static Image Folder Reference
+
 // Configure the HTTP request pipeline.
 if (app.Environment.IsDevelopment())
 {
