@@ -21,7 +21,15 @@ options.WithOrigins("http://localhost:3000")
 .AllowAnyMethod()
 .AllowAnyHeader());
 
-//Removed the Static Image Folder Reference
+/*
+//Removed the Static Image Folder Reference 
+app.UseStaticFiles(new StaticFileOptions
+{
+    FileProvider = new PhysicalFileProvider(
+        Path.Combine(builder.Environment.ContentRootPath, "Images")),
+    RequestPath = "/Images"
+});
+*/
 
 // Configure the HTTP request pipeline.
 if (app.Environment.IsDevelopment())
