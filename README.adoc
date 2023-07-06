@@ -10,7 +10,7 @@ images. The branches of this repository correspond to versions of the s2i-dotnet
 You can deploy the application using the OpenShift client (`oc`) with the following commands:
 
 [source]
-----
+-----
 # Create a new OpenShift project
 $ oc new-project mydemo
 
@@ -20,7 +20,7 @@ $ oc new-app dotnet:7.0-ubi8~https://github.com/redhat-developer/s2i-dotnetcore-
 # Make the .NET Core application accessible externally and show the url
 $ oc expose service s2i-dotnetcore-ex
 $ oc get route s2i-dotnetcore-ex
-----
+-----
 
 == Copyright and License
 
